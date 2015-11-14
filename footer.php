@@ -4,17 +4,36 @@
 <footer id="footer" class="bc-footer">
   <div class="container">
     <div class="row">
-      <div class="footer-col col-sm-6 col-md-6">
-        <p><a href="https://www.gov.uk/government/organisations/homes-and-communities-agency" target="_blank">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/homes-communities-logo.png" alt="<?php bloginfo( 'name' ); ?>">
-	</a>
-        </p>
+      <div class="footer-col col-sm-6 col-md-4 col-lg-2">
+          <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
       </div>
-      <div class="footer-col col-sm-6 col-md-6 text-right">
-        <p>Appointed to HCA Multidisciplinary Panel<br>2014-2018</p>
-        <p><small>Copyright © <?php echo date("Y"); ?></small></p>
-      </div>
+        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
+            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
+        </div>
+        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
+            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
+        </div>
+        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
+            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
+        </div>
+        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
+            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
+        </div>
+        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
+            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
+        </div>
     </div>
+      <div class="row">
+          <div class="footer-col col-sm-12 col-md-6 col-lg-6">
+              <p><small>Tweet</small></p>
+          </div>
+          <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+              <p><small>Address</small></p>
+          </div>
+          <div class="footer-col col-sm-12 col-md-2 col-lg-2">
+              <p><small>Copyright © <?php echo date("Y"); ?></small></p>
+          </div>
+      </div>
   </div>
 </footer>
 <!-- #foot -->

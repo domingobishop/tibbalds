@@ -4,11 +4,11 @@
  *
  */
 get_header(); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-<?php $bcimage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-<?php endif; ?>
-<?php $servicescolour = get_post_meta($post->ID, 'Services colour', true); ?>
+<?php while (have_posts()) : the_post(); ?>
+    <?php if (has_post_thumbnail() && !post_password_required()) : ?>
+        <?php $bcimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
+    <?php endif; ?>
+    <?php $servicescolour = get_post_meta($post->ID, 'Services colour', true); ?>
 <style type="text/css">
   .services-menu ul li.current-menu-item {
       border-left: 3px solid <?php echo $servicescolour; ?>;
@@ -19,11 +19,11 @@ get_header(); ?>
   <div class="container text-left">
     <div class="row">
       <div class="col-md-12">
-          <?php if ( is_active_sidebar( 'services-menu' ) ) { ?>
-          <ul>
-            <?php dynamic_sidebar( 'services-menu' ); ?>
-          </ul>
-          <?php } ?>
+          <?php if (is_active_sidebar('services-menu')) { ?>
+        <ul>
+            <?php dynamic_sidebar('services-menu'); ?>
+        </ul>
+    <?php } ?>
       </div>
     </div>
   </div>
@@ -44,13 +44,15 @@ get_header(); ?>
       <div class="col-md-6 col-lg-6">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		        <div class="excerpt-content">
-            		<?php if($post->post_excerpt) the_excerpt(); ?>
+            		<?php if ($post->post_excerpt) the_excerpt(); ?>
           	</div>
           	<!-- .excerpt-content --> 
         </article>     
       </div>
       <div class="col-md-6 col-lg-6">
-        <?php if ($bcimage) { echo '<img src="' . $bcimage[0] . '" class="img-responsive"'; } ?>
+        <?php if ($bcimage) {
+        echo '<img src="' . $bcimage[0] . '" class="img-responsive"';
+    } ?>
       </div>
     </div>
   </div>

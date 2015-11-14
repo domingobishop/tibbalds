@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
     <div id="content" class="page-intro color-blu-bg post" role="main">
+        <div class="bc-banner">
+            <img src="http://placehold.it/1600x450?text=banner" class="img-responsive">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -13,7 +16,25 @@
                     </div>
                 </div>
             </div>
-            <div class="bc-post-loop-wrap">
+            <div class="row">
+                <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+                    <img src="http://placehold.it/400x300?text=news" class="img-responsive">
+                    <h3>News</h3>
+                    <p>Vel nostro inciderint an. Semper indoctum vix id, dolore quaerendum qui in.</p>
+                </div>
+                <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+                    <img src="http://placehold.it/400x300?text=best" class="img-responsive">
+                    <h3>Best practise</h3>
+                    <p>Vel nostro inciderint an. Semper indoctum vix id, dolore quaerendum qui in.</p>
+                </div>
+                <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+                    <img src="http://placehold.it/400x300?text=map" class="img-responsive">
+                    <h3>Find us</h3>
+                    <p>Vel nostro inciderint an. Semper indoctum vix id, dolore quaerendum qui in.</p>
+                </div>
+            </div>
+
+            <!-- <div class="bc-post-loop-wrap">
                 <?php if (have_posts()) : ?>
                     <?php /* The loop */ ?>
                     <?php while (have_posts()) : the_post(); ?>
@@ -26,7 +47,7 @@
                                 <div class="entry-summary">
                                     <?php the_excerpt(); ?>
                                 </div>
-                                <!-- .entry-summary -->
+
                             </div>
                             <div class="col-md-4 col-lg-4">
                                 <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
@@ -47,10 +68,9 @@
                         <li class="previous"><?php next_posts_link(__('&#8249; Older posts', 'blankcanvas')); ?></li>
                         <li class="next"><?php previous_posts_link(__('Newer posts &#8250;', 'blankcanvas')); ?></li>
                     </ul>
-                    <!-- end of .navigation -->
                 </nav>
-                <!-- #post-loop -->
-            </div>
+            </div> -->
+
         </div>
     </div>
     <!-- #content -->

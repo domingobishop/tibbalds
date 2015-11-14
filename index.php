@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div id="content" class="page-intro color-blu-bg post" role="main">
+    <div id="content" class="page-intro color-red-bg post" role="main">
         <div class="bc-banner">
             <img src="http://placehold.it/1600x450?text=banner" class="img-responsive">
         </div>

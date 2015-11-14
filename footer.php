@@ -23,7 +23,7 @@
             <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
         </div>
     </div>
-      <div class="row">
+      <div class="row bc-footer-details clearfix">
           <div class="footer-col col-sm-12 col-md-6 col-lg-6">
               <p><small>Tweet</small></p>
           </div>

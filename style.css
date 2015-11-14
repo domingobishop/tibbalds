@@ -101,7 +101,7 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
     border-bottom: 1px solid #fff;
 }
 .navbar-default {
-    background-color: #0c57a8;
+    background-color: #c20349;
 }
 .navbar-default .navbar-nav > li > a {
 	text-decoration: none;
@@ -138,16 +138,16 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	}
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover {
 		color: #fff;
-		background-color: #0c57a8;
+		background-color: #c20349;
 	}
 	.navbar-default .navbar-nav > li.current-page-ancestor > a {
 	  	color: #fff;
-		background-color: #0c57a8;
+		background-color: #c20349;
 	  	text-decoration: none;
 	}
 	.navbar-default .navbar-nav > li.current-menu-item > a {
 	  	color: #fff;
-		background-color: #0c57a8;
+		background-color: #c20349;
 	  	text-decoration: none;
 	}
 	.navbar {
@@ -252,13 +252,17 @@ header {
  */
  
 footer {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 footer ul {
 	list-style-type: none;
 	padding: 0;
 }
+.bc-footer-details {
+    margin-top: 1em;
+}
+
 /**
  * Home
  * ----------------------------------------------------------------------------
@@ -297,7 +301,11 @@ footer ul {
  	color: #fff;
  	background-color: #0c57a8;
  }
- .color-blu-bg a {
+ .color-red-bg {
+     color: #fff;
+     background-color: #c20349;
+ }
+ .color-blu-bg a, .color-red-bg a {
  	color: #fff;
  }
  .bc-post-loop-wrap h3 a {

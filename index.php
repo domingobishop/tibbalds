@@ -17,17 +17,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <img src="http://placehold.it/400x300?text=news" class="img-responsive">
                     <h3>News</h3>
                     <p>Vel nostro inciderint an. Semper indoctum vix id, dolore quaerendum qui in.</p>
                 </div>
-                <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <img src="http://placehold.it/400x300?text=best" class="img-responsive">
                     <h3>Best practise</h3>
                     <p>Vel nostro inciderint an. Semper indoctum vix id, dolore quaerendum qui in.</p>
                 </div>
-                <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <img src="http://placehold.it/400x300?text=map" class="img-responsive">
                     <h3>Find us</h3>
                     <p>Vel nostro inciderint an. Semper indoctum vix id, dolore quaerendum qui in.</p>

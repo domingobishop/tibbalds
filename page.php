@@ -4,7 +4,7 @@
         <?php $bcimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
     <?php endif; ?>
 
-    <div id="page-intro" class="page-intro color-blu-bg">
+    <div id="page-intro" class="page-intro color-red-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -17,15 +17,13 @@
                         <div class="excerpt-content">
                             <?php if ($post->post_excerpt) the_excerpt(); ?>
                         </div>
-                        <!-- .excerpt-content -->
-
                     </article>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="content" class="bc-content page" role="main">
+    <div id="content" class="bc-content page">
     <div class="container">
     <div class="row">
     <div class="col-md-6 col-lg-6">
@@ -39,10 +37,12 @@
     </div>
     <div class="col-md-6 col-lg-6">
         <?php if ($bcimage) {
-            echo '<img src="' . $bcimage[0] . '" class="img-responsive"';
+            echo '<div class"feature-img"><img src="' . $bcimage[0] . '" class="img-responsive"></div>';
         } ?>
+        <?php $map = get_post_meta($post->ID, 'Map', true); ?>
+        <div class="map"><?php echo $map; ?></div>
     </div>
-<?php endwhile; ?>
+    <?php endwhile; ?>
     </div>
     </div>
     </div>

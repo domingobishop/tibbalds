@@ -4,7 +4,7 @@
         <?php $bcimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
     <?php endif; ?>
 
-    <div id="content" class="page-intro color-blu-bg post" role="main">
+    <div id="content" class="page-intro color-red-bg post">
     <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -26,7 +26,7 @@
     </div>
     <div class="col-lg-6">
         <?php if ($bcimage) {
-            echo '<img src="' . $bcimage[0] . '" class="img-responsive"';
+            echo '<img src="' . $bcimage[0] . '" class="img-responsive">';
         } ?>
     </div>
 <?php endwhile; ?>

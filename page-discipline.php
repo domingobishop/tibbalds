@@ -10,7 +10,7 @@ get_header(); ?>
     <?php endif; ?>
     <?php $bgcolour = get_post_meta($post->ID, 'bg colour', true); ?>
 
-<div id="content" class="page-intro color-red-bg post" role="main" style="background-color:<?php echo $bgcolour; ?>;">
+<div id="content" class="page-intro color-red-bg" style="background-color:<?php echo $bgcolour; ?>;">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -35,7 +35,6 @@ get_header(); ?>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <div class="bc-content">

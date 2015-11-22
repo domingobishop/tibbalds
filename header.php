@@ -48,4 +48,4 @@
     </header>
     <!-- #head -->
 
-    <main id="main" class="bc-main">
+    <main id="main" class="bc-main" role="main">

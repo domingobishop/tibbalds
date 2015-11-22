@@ -17,15 +17,13 @@
                         <div class="excerpt-content">
                             <?php if ($post->post_excerpt) the_excerpt(); ?>
                         </div>
-                        <!-- .excerpt-content -->
-
                     </article>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="content" class="bc-content page" role="main">
+    <div id="content" class="bc-content page">
     <div class="container">
     <div class="row">
     <div class="col-md-6 col-lg-6">
@@ -42,7 +40,7 @@
             echo '<img src="' . $bcimage[0] . '" class="img-responsive"';
         } ?>
     </div>
-<?php endwhile; ?>
+    <?php endwhile; ?>
     </div>
     </div>
     </div>

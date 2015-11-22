@@ -35,7 +35,7 @@ get_header(); ?>
         </div>
     </div>
 
-    <div id="content" class="bc-content page" role="main">
+    <div id="content" class="bc-content page">
     <div class="container">
     <div class="row">
     <div class="col-lg-12">

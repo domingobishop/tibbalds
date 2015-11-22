@@ -26,7 +26,7 @@
     </div>
     <div class="col-lg-6">
         <?php if ($bcimage) {
-            echo '<img src="' . $bcimage[0] . '" class="img-responsive"';
+            echo '<img src="' . $bcimage[0] . '" class="img-responsive">';
         } ?>
     </div>
 <?php endwhile; ?>

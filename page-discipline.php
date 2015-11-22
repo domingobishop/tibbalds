@@ -51,7 +51,7 @@ get_header(); ?>
       </div>
       <div class="col-md-6 col-lg-6">
       <?php if ($bcimage) {
-        echo '<img src="' . $bcimage[0] . '" class="img-responsive"';
+        echo '<img src="' . $bcimage[0] . '" class="img-responsive">';
     } ?>
       </div>
     </div>

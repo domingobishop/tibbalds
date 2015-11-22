@@ -37,8 +37,10 @@
     </div>
     <div class="col-md-6 col-lg-6">
         <?php if ($bcimage) {
-            echo '<img src="' . $bcimage[0] . '" class="img-responsive"';
+            echo '<div class"feature-img"><img src="' . $bcimage[0] . '" class="img-responsive"></div>';
         } ?>
+        <?php $map = get_post_meta($post->ID, 'Map', true); ?>
+        <div class="map"><?php echo $map; ?></div>
     </div>
     <?php endwhile; ?>
     </div>

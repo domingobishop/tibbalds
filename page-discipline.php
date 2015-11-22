@@ -56,26 +56,28 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <div class="container projects">
+  <div class="container">
   <div class="row">
-  <?php
-    for ($i = 1; $i <= 12; $i++) { ?>
-        <div class="col-md-4 col-lg-4 service-tile service-<?php echo $i; ?>">
+      <div class="projects">
+          <?php
+            for ($i = 1; $i <= 12; $i++) { ?>
+                <div class="col-md-4 col-lg-4 service-tile service-<?php echo $i; ?>">
+                    <?php
+                    $image[$i] = get_post_meta($post->ID, 'image' . $i, true);
+                    $title[$i] = get_post_meta($post->ID, 'title' . $i, true);
+                    $text[$i] = get_post_meta($post->ID, 'text' . $i, true);
+                    $url[$i] = get_post_meta($post->ID, 'url' . $i, true);
+                    ?>
+                    <a href="<?php echo $url[$i]; ?>">
+                        <img src="<?php echo $image[$i]; ?>" alt="<?php echo $title[$i]; ?>" class="img-responsive">
+                    <h4><?php echo $title[$i]; ?></h4>
+                    </a>
+                    <div><p><?php echo $text[$i]; ?></p></div>
+                </div>
             <?php
-            $image[$i] = get_post_meta($post->ID, 'image' . $i, true);
-            $title[$i] = get_post_meta($post->ID, 'title' . $i, true);
-            $text[$i] = get_post_meta($post->ID, 'text' . $i, true);
-            $url[$i] = get_post_meta($post->ID, 'url' . $i, true);
+            }
             ?>
-            <a href="<?php echo $url[$i]; ?>">
-                <img src="<?php echo $image[$i]; ?>" alt="<?php echo $title[$i]; ?>" class="img-responsive">
-            <h4><?php echo $title[$i]; ?></h4>
-            </a>
-            <div><p><?php echo $text[$i]; ?></p></div>
-        </div>
-    <?php
-    }
-    ?>
+      </div>
   </div>
   </div>
 </div>

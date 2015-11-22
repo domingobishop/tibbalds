@@ -213,6 +213,9 @@ footer ul {
 .bc-footer-details {
     margin-top: 1em;
 }
+.footer-logos .widget {
+    padding-bottom: 1em;
+}
 
 /**
  * Home

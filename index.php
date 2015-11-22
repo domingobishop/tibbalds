@@ -57,8 +57,13 @@
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <img src="http://placehold.it/400x300?text=news" class="img-responsive">
-                    <h3>News</h3>
-                    <p>Vel nostro inciderint an. Semper indoctum vix id, dolore quaerendum qui in.</p>
+                    <?php query_posts('cat=1&posts_per_page=1'); ?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <h3>
+                            <?php the_title(); ?>
+                        </h3>
+                       <?php the_excerpt(); ?>
+                    <?php endwhile; endif; ?>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <img src="http://placehold.it/400x300?text=best" class="img-responsive">

@@ -35,10 +35,10 @@
                             <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
                         </a>
                     </div>
-                    <div class="col-sm-2 col-md-2 col-lg-2">
-                        <ul>
-                            <li><a>Contact us</a></li>
-                            <li><a>Our team</a></li>
+                    <div class="col-sm-2 col-md-2 col-lg-2 text-right">
+                        <ul class="sub-nav-menu">
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Our team</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,4 +48,4 @@
     </header>
     <!-- #head -->
 
-    <main id="main" class="bc-main">
+    <main id="main" class="bc-main" role="main">

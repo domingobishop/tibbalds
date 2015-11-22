@@ -49,13 +49,11 @@ add_action('widgets_init', 'theme_slug_widgets_init');
 function theme_slug_widgets_init()
 {
     register_sidebar(array(
-        'name' => __('Services menu', 'theme-slug'),
-        'id' => 'services-menu',
-        'description' => __('Widgets area Services template page.', 'theme-slug'),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'name' => __('Footer logos', 'theme-slug'),
+        'id' => 'footer-logos',
+        'description' => __('Widget area for logos.', 'theme-slug'),
+        'before_widget' => '<div id="%1$s" class="widget footer-col col-sm-6 col-md-4 col-lg-2 %2$s">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="widgettitle">',
-        'after_title' => '</h2>',
     ));
 }
 

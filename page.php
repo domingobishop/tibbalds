@@ -4,7 +4,7 @@
         <?php $bcimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
     <?php endif; ?>
 
-    <div id="page-intro" class="page-intro color-blu-bg">
+    <div id="page-intro" class="page-intro color-red-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">

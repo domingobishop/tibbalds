@@ -37,8 +37,8 @@
                     </div>
                     <div class="col-sm-2 col-md-2 col-lg-2 text-right">
                         <ul class="sub-nav-menu">
-                            <li><a>Contact us</a></li>
-                            <li><a>Our team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Our team</a></li>
                         </ul>
                     </div>
                 </div>

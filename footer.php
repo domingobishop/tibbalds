@@ -4,24 +4,11 @@
 <footer id="footer" class="bc-footer">
   <div class="container">
     <div class="row">
-      <div class="footer-col col-sm-6 col-md-4 col-lg-2">
-          <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
-      </div>
-        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
-            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
-        </div>
-        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
-            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
-        </div>
-        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
-            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
-        </div>
-        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
-            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
-        </div>
-        <div class="footer-col col-sm-6 col-md-4 col-lg-2">
-            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
-        </div>
+        <?php if ( is_active_sidebar( 'footer-logos' ) ) { ?>
+            <div class="footer-logos">
+                <?php dynamic_sidebar( 'footer-logos' ); ?>
+            </div>
+        <?php } ?>
     </div>
       <div class="row bc-footer-details clearfix">
           <div class="footer-col col-sm-12 col-md-6 col-lg-6">

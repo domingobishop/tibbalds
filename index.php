@@ -56,14 +56,21 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="http://placehold.it/400x300?text=news" class="img-responsive">
                     <?php query_posts('cat=1&posts_per_page=1'); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
+                            <div class="entry-thumbnail">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
+                                </a>
+                            </div>
+                        <?php endif; ?>
                         <h3>
                             <?php the_title(); ?>
                         </h3>
                        <?php the_excerpt(); ?>
                     <?php endwhile; endif; ?>
+                    <?php wp_reset_query(); ?>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <img src="http://placehold.it/400x300?text=best" class="img-responsive">

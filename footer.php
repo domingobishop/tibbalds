@@ -37,7 +37,7 @@
                     <i class="fa fa-twitter-square"></i>
                   </a>
               </ul>
-              <p><small><a href="http://tibbaldscampbellreithjv.com/" target="_blank"/>Tibbalds CampbellReith<br>Multidisciplinary Joint Venture<br/><img src="http://tibbalds.co.uk/wp-content/uploads/2015/10/HCAJV-logo-strip-tibbalds-site-v1.jpg" style="margin-top:3px;"/></a></small></p>
+              <p><small><a href="http://tibbaldscampbellreithjv.com/" target="_blank"/>Tibbalds CampbellReith<br>Multidisciplinary Joint Venture<br/><img src="<?php echo get_template_directory_uri(); ?>/img/hcajv-logo.jpg" style="margin-top:3px;"/></a></small></p>
           </div>
       </div>
   </div>

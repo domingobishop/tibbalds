@@ -19,7 +19,7 @@ body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
 	/*The weights are 300 (light), 400 (normal), 600 (semibold), and 700 (bold) and the only acceptable CSS keyword is "normal". */
 	text-rendering: optimizeLegibility;
-	color: #0c57a8;
+	color: #222;
 	font-size: 16px;
 	line-height: 1.6;
 }
@@ -150,6 +150,11 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 		background-color: #c20349;
 	  	text-decoration: none;
 	}
+    .navbar-default .navbar-nav > li:nth-of-type(1) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(1) > a { background-color: #61a4dd; }
+    .navbar-default .navbar-nav > li:nth-of-type(2) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(2) > a { background-color: #988cc7; }
+    .navbar-default .navbar-nav > li:nth-of-type(3) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(3) > a { background-color: #eb8c8f; }
+    .navbar-default .navbar-nav > li:nth-of-type(4) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(4) > a { background-color: #ff9c5d; }
+    .navbar-default .navbar-nav > li:nth-of-type(5) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(5) > a { background-color: #83c45a; }
 	.navbar {
 		color: #0c57a8;
 		font-weight: 500;
@@ -167,6 +172,9 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
     margin: 0;
     padding: 1em 1em 0 0;
     list-style: none;
+}
+.sub-nav-menu a {
+    text-decoration: none;
 }
 
 /**
@@ -205,10 +213,20 @@ header {
 footer {
 	padding-top: 2em;
 	padding-bottom: 2em;
+    background-color: #eee;
 }
 footer ul {
 	list-style-type: none;
 	padding: 0;
+}
+footer a {
+    text-decoration: none;
+}
+footer .social {
+    font-size: 2em;
+}
+footer .social a:hover {
+    text-decoration: none;
 }
 .bc-footer-details {
     margin-top: 1em;
@@ -231,7 +249,10 @@ footer ul {
  * Page & Posts
  * ----------------------------------------------------------------------------
  */
- 
+
+.bc-content {
+    padding-bottom: 2em;
+}
  .page-intro {
  	padding: 20px 0;
  	margin-bottom: 21px;
@@ -275,6 +296,11 @@ footer ul {
 }
 .projects {
     margin: 1em 0;
+}
+.team .entry-content-title {
+    height: 78px;
+    overflow: hidden;
+    margin-bottom: 1em;
 }
  
 

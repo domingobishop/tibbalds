@@ -18,6 +18,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <link rel='stylesheet' id='blank-canvas' href='<?php echo get_template_directory_uri(); ?>/style.css'
           type='text/css' media='all'/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
     <?php wp_head(); ?>
 </head>
 
@@ -27,7 +28,7 @@
         <div class="bc-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-10 col-md-10 col-lg-10">
+                    <div class="col-xs-8 col-sm-10 col-md-10 col-lg-6">
                         <a class="brand" href="<?php bloginfo('siteurl'); ?>/"
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                             <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
@@ -35,7 +36,7 @@
                             <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
                         </a>
                     </div>
-                    <div class="col-sm-2 col-md-2 col-lg-2 text-right">
+                    <div class="col-xs-8 col-sm-2 col-md-2 col-lg-6 text-right">
                         <ul class="sub-nav-menu">
                             <li><a href="#">Contact us</a></li>
                             <li><a href="#">Our team</a></li>

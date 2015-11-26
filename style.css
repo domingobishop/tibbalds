@@ -222,6 +222,12 @@ footer ul {
 footer a {
     text-decoration: none;
 }
+footer .social {
+    font-size: 2em;
+}
+footer .social a:hover {
+    text-decoration: none;
+}
 .bc-footer-details {
     margin-top: 1em;
 }

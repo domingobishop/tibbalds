@@ -29,6 +29,14 @@
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
           <div class="footer-col col-sm-12 col-md-4 col-lg-4 text-right">
+              <ul class="social">
+                  <a href="http://www.facebook.com/pages/Tibbalds-Planning-and-Urban-Design/182770125133124" target="_blank">
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                  <a href="https://twitter.com/#!/Tibbalds" target="_blank">
+                    <i class="fa fa-twitter-square"></i>
+                  </a>
+              </ul>
               <p><small><a href="http://tibbaldscampbellreithjv.com/" target="_blank"/>Tibbalds CampbellReith<br>Multidisciplinary Joint Venture<br/><img src="http://tibbalds.co.uk/wp-content/uploads/2015/10/HCAJV-logo-strip-tibbalds-site-v1.jpg" style="margin-top:3px;"/></a></small></p>
           </div>
       </div>

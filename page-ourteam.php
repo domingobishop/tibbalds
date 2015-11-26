@@ -5,7 +5,7 @@
  */
 get_header(); ?>
 
-    <div id="content" class="page-intro color-red-bg">
+    <div id="content" class="page-intro color-red-bg team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -29,7 +29,7 @@ get_header(); ?>
                     <?php /* The loop */ ?>
                     <?php while (have_posts()) : the_post(); ?>
 
-                            <div class="col-md-2 col-lg-2">
+                            <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
                                 <div id="post-<?php the_ID(); ?>">
                                 <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
                                             <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
@@ -37,6 +37,9 @@ get_header(); ?>
                                 <h4 class="entry-title">
                                         <?php the_title(); ?>
                                 </h4>
+                                    <div class="entry-content-title">
+                                        <?php the_content(); ?>
+                                    </div>
                                 </div>
                             </div>
 

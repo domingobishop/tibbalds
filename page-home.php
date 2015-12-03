@@ -5,8 +5,11 @@
  */
 get_header(); ?>
 
-    <div id="content" class="color-red-bg post" role="main">
+    <div id="content" class="page-intro color-red-bg">
         <div class="bc-banner">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
 
                     <ol class="carousel-indicators">
@@ -40,6 +43,9 @@ get_header(); ?>
                         </div>
                     <?php } ?>
                 </div>
+            </div>
+        </div>
+        </div>
         </div>
     </div>
 

@@ -33,7 +33,7 @@
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                             <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
                                  alt="<?php bloginfo('name'); ?>" class="img-responsive"> -->
-                            <img src="http://placehold.it/300x120?text=logo" class="img-responsive">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive" alt="Tibbalds">
                         </a>
                     </div>
                     <div class="col-xs-8 col-sm-2 col-md-2 col-lg-6 text-right">

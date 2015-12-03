@@ -5,24 +5,20 @@
  */
 get_header(); ?>
 
-    <div id="content" class="page-intro color-red-bg post" role="main">
+    <div id="content" class="color-red-bg post" role="main">
         <div class="bc-banner">
-
                 <div id="carousel" class="carousel slide" data-ride="carousel">
 
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                     </ol>
-
 
                     <?php $args = array(
                         'post_parent' => $post->ID,
                         'post_type' => 'attachment',
-                        'numberposts' => 5, // show all
+                        'numberposts' => 3, // show all
                         'post_status' => 'any',
                         'post_mime_type' => 'image',
                         'orderby' => 'menu_order',
@@ -44,7 +40,6 @@ get_header(); ?>
                         </div>
                     <?php } ?>
                 </div>
-
         </div>
     </div>
 

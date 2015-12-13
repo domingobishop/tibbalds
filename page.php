@@ -4,10 +4,10 @@
         <?php $bcimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
     <?php endif; ?>
 
-    <div id="page-intro" class="page-intro color-red-bg">
+    <div id="page-intro" class="page-intro">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="title-header">
                             <h1>

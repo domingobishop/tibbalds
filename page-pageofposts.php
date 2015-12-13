@@ -5,7 +5,7 @@
  */
 get_header(); ?>
 
-    <div id="content" class="page-intro color-red-bg">
+    <div id="content" class="page-intro">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

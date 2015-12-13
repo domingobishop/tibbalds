@@ -10,34 +10,30 @@ get_header(); ?>
     <?php endif; ?>
     <?php $bgcolour = get_post_meta($post->ID, 'bg colour', true); ?>
 
-<div id="content" class="page-intro color-red-bg" style="background-color:<?php echo $bgcolour; ?>;">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="title-header">
-            <h1>
-              <?php the_title(); ?>
-            </h1>
-          </div>
-      </div>
+<div id="content" class="bc-content">
+    <div class="container">
+        <div class="row">
+            <div class="page-intro col-lg-12">
+                <div class="title-header" style="background-color:<?php echo $bgcolour; ?>;">
+                    <h1>
+                        <?php the_title(); ?>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <div class="excerpt-content">
+                        <?php if ($post->post_excerpt) the_excerpt(); ?>
+                    </div>
+                    <!-- .excerpt-content -->
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-6">
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-6">
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		        <div class="excerpt-content">
-            		<?php if ($post->post_excerpt) the_excerpt(); ?>
-          	</div>
-          	<!-- .excerpt-content --> 
-        </article>     
-      </div>
-      <div class="col-md-6 col-lg-6">
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bc-content">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-lg-6">

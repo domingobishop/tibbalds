@@ -124,14 +124,18 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	 	width: 100%;
 	 }
 	 .navbar-nav > li {
-	 	width: 15.6%;
-		margin-right: 1%;
+	 	width: 16.666%;
 	 }
 	 .nav > li a {
 	  background-color: #eee;
-	  border-top-right-radius: 16px;
 	  padding: 10px;
-	  height: 60px;
+	  height: 70px;
+		 border-right: 5px solid #ffffff;
+		 border-top: 15px solid #ffffff;
+		 border-bottom: 5px solid #ffffff;
+	}
+	.nav > li:nth-of-type(6) a {
+		border-right: 0px;
 	}
 	.navbar-default .navbar-nav > li > a {
 	  color: #0c57a8;

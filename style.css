@@ -205,7 +205,9 @@ header {
  * Main
  * ----------------------------------------------------------------------------
  */
- 
+.bc-main {
+	margin-bottom: 2em;
+}
 .bc-main .container {
 	background-color: #ffffff;
 	padding-bottom: 15px;
@@ -261,7 +263,7 @@ footer .social a:hover {
 	background-color: #eee;
 }
 .bc-content {
-    padding-bottom: 2em;
+
 }
  .page-intro {
 

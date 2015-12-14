@@ -5,7 +5,7 @@
  */
 get_header(); ?>
 
-    <div id="content" class="page-intro">
+    <div id="content" class="page-intro page-of-posts">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -23,6 +23,8 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
+            </div>
+        <div class="container">
             <div class="bc-post-loop-wrap">
                 <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future'); ?>
                 <?php if (have_posts()) : ?>

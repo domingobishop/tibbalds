@@ -28,7 +28,7 @@
         <div class="bc-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-8 col-sm-10 col-md-10 col-lg-6">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <a class="brand" href="<?php bloginfo('siteurl'); ?>/"
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                             <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
@@ -36,7 +36,8 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive" alt="Tibbalds">
                         </a>
                     </div>
-                    <div class="col-xs-8 col-sm-2 col-md-2 col-lg-6 text-right">
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 text-right">
+                        <h2>Tibbalds Planning and Urban Design</h2>
                         <ul class="sub-nav-menu">
                             <li><a href="#">Contact us</a></li>
                             <li><a href="#">Our team</a></li>

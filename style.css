@@ -185,8 +185,12 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 }
 .sub-nav-menu {
     margin: 0;
-    padding: 1em 1em 0 0;
+    padding: 0;
     list-style: none;
+}
+.sub-nav-menu li {
+	padding: 0 0 0.5em 0.5em;
+	display: inline-block;
 }
 .sub-nav-menu a {
     text-decoration: none;

@@ -10,7 +10,7 @@ get_header(); ?>
     <?php endif; ?>
     <?php $bgcolour = get_post_meta($post->ID, 'bg colour', true); ?>
 
-<div id="content" class="bc-content">
+<div id="content" class="bc-content discipline">
     <div class="container">
         <div class="row">
             <div class="page-intro col-lg-12">

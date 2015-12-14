@@ -124,13 +124,18 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	 	width: 100%;
 	 }
 	 .navbar-nav > li {
-	 	width: 16.666%;
+	 	width: 16%;
+		 margin-right: 0.8%;
 	 }
+	.navbar-nav > li:nth-of-type(6) {
+		margin-right: 0;
+	}
 	 .nav > li a {
+		 color: #fff;
 	  background-color: #eee;
 	  padding: 10px;
 	  height: 70px;
-		 border-right: 5px solid #ffffff;
+		 /* border-right: 5px solid #ffffff; */
 		 border-top: 15px solid #ffffff;
 		 border-bottom: 5px solid #ffffff;
 	}
@@ -138,11 +143,10 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 		border-right: 0px;
 	}
 	.navbar-default .navbar-nav > li > a {
-	  color: #0c57a8;
+	  color: #ffffff;
 	  text-decoration: none;
 	}
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover {
-		color: #fff;
 		background-color: #c20349;
 	}
 	.navbar-default .navbar-nav > li.current-page-ancestor > a {
@@ -155,11 +159,18 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 		background-color: #c20349;
 	  	text-decoration: none;
 	}
-    .navbar-default .navbar-nav > li:nth-of-type(1) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(1) > a { background-color: #61a4dd; }
-    .navbar-default .navbar-nav > li:nth-of-type(2) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(2) > a { background-color: #988cc7; }
-    .navbar-default .navbar-nav > li:nth-of-type(3) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(3) > a { background-color: #eb8c8f; }
-    .navbar-default .navbar-nav > li:nth-of-type(4) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(4) > a { background-color: #ff9c5d; }
-    .navbar-default .navbar-nav > li:nth-of-type(5) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(5) > a { background-color: #83c45a; }
+	.navbar-default .navbar-nav > li:nth-of-type(2) > a { background-color: #61a4dd; }
+	.navbar-default .navbar-nav > li:nth-of-type(3) > a { background-color: #988cc7; }
+	.navbar-default .navbar-nav > li:nth-of-type(4) > a { background-color: #eb8c8f; }
+	.navbar-default .navbar-nav > li:nth-of-type(5) > a { background-color: #ff9c5d; }
+	.navbar-default .navbar-nav > li:nth-of-type(6) > a { background-color: #83c45a; }
+	.navbar-default .navbar-nav > li:nth-of-type(1) > a { background-color: #a6b0ba; }
+    .navbar-default .navbar-nav > li:nth-of-type(2) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(2) > a { border-bottom: 5px solid #61a4dd; background-color: #61a4dd; }
+    .navbar-default .navbar-nav > li:nth-of-type(3) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(3) > a { border-bottom: 5px solid #988cc7; background-color: #988cc7; }
+    .navbar-default .navbar-nav > li:nth-of-type(4) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(4) > a { border-bottom: 5px solid #eb8c8f; background-color: #eb8c8f; }
+    .navbar-default .navbar-nav > li:nth-of-type(5) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(5) > a { border-bottom: 5px solid #ff9c5d; background-color: #ff9c5d; }
+    .navbar-default .navbar-nav > li:nth-of-type(6) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(6) > a { border-bottom: 5px solid #83c45a; background-color: #83c45a; }
+	.navbar-default .navbar-nav > li:nth-of-type(1) > a:hover, .navbar-default .navbar-nav > li.current-menu-item:nth-of-type(1) > a { border-bottom: 5px solid #a6b0ba; background-color: #a6b0ba; }
 	.navbar {
 		color: #0c57a8;
 		font-weight: 500;
@@ -216,6 +227,9 @@ header {
 	background-color: #ffffff;
 	padding-bottom: 15px;
 }
+.home .carousel {
+	border-top: #a6b0ba solid 15px;
+}
 /**
  * Footer
  * ----------------------------------------------------------------------------
@@ -223,6 +237,7 @@ header {
  
 footer {
 	padding-bottom: 2em;
+	color: #ffffff;
 }
 footer ul {
 	list-style-type: none;
@@ -264,7 +279,8 @@ footer .social a:hover {
 	padding: 0.5em;
 }
 .title-header {
-	background-color: #eee;
+	color: #ffffff;
+	background-color: #a6b0ba;
 }
 .bc-content {
 

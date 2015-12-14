@@ -18,19 +18,10 @@ get_header(); ?>
                     <h1>
                         <?php the_title(); ?>
                     </h1>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-6">
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div class="excerpt-content">
                         <?php if ($post->post_excerpt) the_excerpt(); ?>
                     </div>
-                    <!-- .excerpt-content -->
-                </article>
-            </div>
-            <div class="col-md-6 col-lg-6">
+                </div>
             </div>
         </div>
     </div>

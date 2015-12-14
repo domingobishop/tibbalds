@@ -5,7 +5,7 @@
  */
 get_header(); ?>
 
-    <div id="content" class="page-intro color-red-bg">
+    <div id="content" class="page-intro">
         <div class="bc-banner">
         <div class="container">
         <div class="row">

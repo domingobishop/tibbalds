@@ -216,7 +216,11 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
         padding: 0 0 0.5em 0.75em;
     }
 }
-
+@media (max-width: 991px) {
+    .navbar {
+        font-size: 0.8em;
+    }
+}
 /**
  * Header
  * ----------------------------------------------------------------------------

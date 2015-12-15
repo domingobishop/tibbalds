@@ -36,12 +36,14 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive" alt="Tibbalds">
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 text-right">
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <div class="sub-nav-menu">
                         <h2>Tibbalds Planning and Urban Design</h2>
-                        <ul class="sub-nav-menu">
+                        <ul>
                             <li><a href="#">Contact us</a></li>
                             <li><a href="#">Our team</a></li>
                         </ul>
+                            </div>
                     </div>
                 </div>
             </div>

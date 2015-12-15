@@ -10,27 +10,20 @@ get_header(); ?>
     <?php endif; ?>
 
 
-    <div id="content" class="bc-content page">
+    <div id="content" class="bc-content page full-width">
     <div class="container">
         <div class="row">
-            <div class="page-intro col-md-6 col-lg-6">
+            <div class="page-intro col-md-12 col-lg-12">
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div class="title-header">
                         <h1>
                             <?php the_title(); ?>
                         </h1>
+                        <div class="excerpt-content">
+                            <?php if ($post->post_excerpt) the_excerpt(); ?>
+                        </div>
                     </div>
-                    <div class="excerpt-content">
-                        <?php if ($post->post_excerpt) the_excerpt(); ?>
-                    </div>
-                    <!-- .excerpt-content -->
-
                 </article>
-            </div>
-            <div class="col-md-6 col-lg-6">
-                <?php if ($bcimage) {
-                    echo '<img src="' . $bcimage[0] . '" class="img-responsive">';
-                } ?>
             </div>
         </div>
     </div>

@@ -119,7 +119,34 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
     float: left;
     margin-left: 15px;
 }
+.navbar-header, .navbar-default .navbar-collapse {
+	background: #a6b0ba;
+}
+.sub-nav-menu {
+    text-align: left;
+}
+.sub-nav-menu a {
+    color: #222;
+}
+.sub-nav-menu a:hover, .sub-nav-menu a:focus {
+    color: #3399ff;
+}
+.sub-nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sub-nav-menu li {
+    padding: 0 0.75em 0.5em 0;
+    display: inline-block;
+}
+.sub-nav-menu a {
+    text-decoration: none;
+}
 @media (min-width: 768px) {
+	.navbar-header, .navbar-default .navbar-collapse {
+		background: transparent;
+	}
 	.navbar-nav {
 	 	width: 100%;
 	 }
@@ -182,16 +209,18 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	  padding-right: 0;
 	  padding-left: 0;
 	}
+    .sub-nav-menu {
+        text-align: right;
+    }
+    .sub-nav-menu li {
+        padding: 0 0 0.5em 0.75em;
+    }
 }
-.sub-nav-menu {
-    margin: 0;
-    padding: 1em 1em 0 0;
-    list-style: none;
+@media (max-width: 991px) {
+    .navbar {
+        font-size: 0.8em;
+    }
 }
-.sub-nav-menu a {
-    text-decoration: none;
-}
-
 /**
  * Header
  * ----------------------------------------------------------------------------
@@ -303,7 +332,7 @@ footer .social a:hover {
  	text-decoration: none;
  }
  .bc-post-loop-wrap h3.entry-title {
- 	border-top: 1px solid #fff;
+ 	border-top: 1px solid #a6b0ba;
  	margin-top: 0;
  	padding-top: 14px;
  }
@@ -313,7 +342,16 @@ footer .social a:hover {
  .bc-post-loop-wrap nav ul {
  	list-style: none;
  }
-
+ .team .bc-post-loop-wrap img {
+     width: 100%;
+ }
+.team-name-title {
+    height: 90px;
+    overflow: hidden;
+}
+.team-name-title h5 {
+    line-height: 1.4;
+}
 .btn-default {
     background-color: #0c57a8;
     text-decoration: none;
@@ -328,12 +366,6 @@ footer .social a:hover {
 .projects {
     margin: 1em 0;
 }
-.team .entry-content-title {
-    height: 78px;
-    overflow: hidden;
-    margin-bottom: 1em;
-}
- 
 
 /**
  * Sidebar & Widgets

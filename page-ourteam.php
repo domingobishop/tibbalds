@@ -36,7 +36,7 @@ get_header(); ?>
                     <!-- #post -->
                     </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="row bc-post-loop-wrap">
+            <div class="row bc-post-loop-wrap row-eq-height">
                 <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future'); ?>
                 <?php if (have_posts()) : ?>
                     <?php /* The loop */ ?>

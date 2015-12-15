@@ -362,7 +362,10 @@ footer .social a:hover {
     overflow: hidden;
     margin-bottom: 1em;
 }
- 
+.team-name-title {
+    height: 120px;
+    overflow: hidden;
+}
 
 /**
  * Sidebar & Widgets

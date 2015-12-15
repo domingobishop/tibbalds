@@ -36,7 +36,7 @@ get_header(); ?>
                     <!-- #post -->
                     </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="row bc-post-loop-wrap row-eq-height">
+            <div class="row bc-post-loop-wrap">
                 <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future'); ?>
                 <?php if (have_posts()) : ?>
                     <?php /* The loop */ ?>
@@ -45,14 +45,16 @@ get_header(); ?>
                             <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
                                 <div id="post-<?php the_ID(); ?>">
                                 <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
-                                            <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
+                                            <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
                                 <?php endif; ?>
+                                    <div class="team-name-title">
                                 <h4 class="entry-title">
                                         <?php the_title(); ?>
                                 </h4>
                                     <div class="entry-content-title">
                                         <?php the_content(); ?>
                                     </div>
+                                </div>
                                 </div>
                             </div>
 

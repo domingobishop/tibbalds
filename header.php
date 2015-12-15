@@ -40,8 +40,11 @@
                         <div class="sub-nav-menu">
                         <h2>Tibbalds Planning and Urban Design</h2>
                         <ul>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Our team</a></li>
+                            <li><a href="<?php bloginfo('siteurl'); ?>/best-practice">best practice</a></li>
+                            <li><a href="<?php bloginfo('siteurl'); ?>/about">about us</a></li>
+                            <li><a href="<?php bloginfo('siteurl'); ?>/people">people</a></li>
+                            <li><a href="<?php bloginfo('siteurl'); ?>/contact">contact us</a></li>
+                            <li><a href="<?php bloginfo('siteurl'); ?>/news">news</a></li>
                         </ul>
                             </div>
                     </div>

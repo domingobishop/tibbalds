@@ -125,13 +125,19 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 .sub-nav-menu {
     text-align: left;
 }
+.sub-nav-menu a {
+    color: #222;
+}
+.sub-nav-menu a:hover, .sub-nav-menu a:focus {
+    color: #3399ff;
+}
 .sub-nav-menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 .sub-nav-menu li {
-    padding: 0 0 0.5em 0.5em;
+    padding: 0 0.75em 0.5em 0;
     display: inline-block;
 }
 .sub-nav-menu a {
@@ -205,6 +211,9 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	}
     .sub-nav-menu {
         text-align: right;
+    }
+    .sub-nav-menu li {
+        padding: 0 0 0.5em 0.75em;
     }
 }
 

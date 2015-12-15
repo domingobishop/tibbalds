@@ -342,7 +342,16 @@ footer .social a:hover {
  .bc-post-loop-wrap nav ul {
  	list-style: none;
  }
-
+ .team .bc-post-loop-wrap img {
+     width: 100%;
+ }
+.team-name-title {
+    height: 90px;
+    overflow: hidden;
+}
+.team-name-title h5 {
+    line-height: 1.4;
+}
 .btn-default {
     background-color: #0c57a8;
     text-decoration: none;
@@ -356,15 +365,6 @@ footer .social a:hover {
 }
 .projects {
     margin: 1em 0;
-}
-.team .entry-content-title {
-    height: 78px;
-    overflow: hidden;
-    margin-bottom: 1em;
-}
-.team-name-title {
-    height: 120px;
-    overflow: hidden;
 }
 
 /**

@@ -45,15 +45,12 @@ get_header(); ?>
                             <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
                                 <div id="post-<?php the_ID(); ?>">
                                 <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
-                                            <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
+                                            <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
                                 <?php endif; ?>
                                     <div class="team-name-title">
-                                <h4 class="entry-title">
+                                <h5>
                                         <?php the_title(); ?>
-                                </h4>
-                                    <div class="entry-content-title">
-                                        <?php the_content(); ?>
-                                    </div>
+                                </h5>
                                 </div>
                                 </div>
                             </div>

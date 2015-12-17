@@ -34,41 +34,43 @@ get_header(); ?>
                         <!-- .entry-content -->
                     </article>
                     <!-- #post -->
-                    </div>
+                </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="row bc-post-loop-wrap">
-                <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future'); ?>
-                <?php if (have_posts()) : ?>
-                    <?php /* The loop */ ?>
-                    <?php while (have_posts()) : the_post(); ?>
+                    <div class="row bc-post-loop-wrap">
+                        <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future'); ?>
+                        <?php if (have_posts()) : ?>
+                            <?php /* The loop */ ?>
+                            <?php while (have_posts()) : the_post(); ?>
 
-                            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-                                <div id="post-<?php the_ID(); ?>">
-                                <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
-                                            <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
-                                <?php endif; ?>
-                                    <div class="team-name-title">
-                                <h5>
-                                        <?php the_title(); ?>
-                                </h5>
+                                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                                    <div id="post-<?php the_ID(); ?>">
+                                        <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
+                                            <div class="people-img">
+                                                <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
+                                            </div>
+                                        <?php endif; ?>
+                                        <div class="team-name-title">
+                                            <h5>
+                                                <?php the_title(); ?>
+                                            </h5>
+                                        </div>
+                                    </div>
                                 </div>
-                                </div>
-                            </div>
 
-                    <?php endwhile; ?>
-                <?php else : ?>
-                    <h2>No content</h2>
-                <?php endif; ?>
-                <nav>
-                    <ul>
-                        <li class="previous"><?php next_posts_link(__('&#8249; Older posts', 'blankcanvas')); ?></li>
-                        <li class="next"><?php previous_posts_link(__('Newer posts &#8250;', 'blankcanvas')); ?></li>
-                    </ul>
-                    <!-- end of .navigation -->
-                </nav>
-                <!-- #post-loop -->
-            </div>
-            </div>
+                            <?php endwhile; ?>
+                        <?php else : ?>
+                            <h2>No content</h2>
+                        <?php endif; ?>
+                        <nav>
+                            <ul>
+                                <li class="previous"><?php next_posts_link(__('&#8249; Older posts', 'blankcanvas')); ?></li>
+                                <li class="next"><?php previous_posts_link(__('Newer posts &#8250;', 'blankcanvas')); ?></li>
+                            </ul>
+                            <!-- end of .navigation -->
+                        </nav>
+                        <!-- #post-loop -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -352,6 +352,22 @@ footer .social a:hover {
 .team-name-title h5 {
     line-height: 1.4;
 }
+.people-img {
+    position: relative;
+    width: 100%;
+}
+.people-img:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.people-img img {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 .btn-default {
     background-color: #0c57a8;
     text-decoration: none;

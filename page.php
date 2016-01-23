@@ -13,9 +13,9 @@
                         <h1>
                             <?php the_title(); ?>
                         </h1>
-                    </div>
-                    <div class="excerpt-content">
-                        <?php if ($post->post_excerpt) the_excerpt(); ?>
+                        <div class="excerpt-content">
+                            <?php if ($post->post_excerpt) the_excerpt(); ?>
+                        </div>
                     </div>
                 </article>
             </div>

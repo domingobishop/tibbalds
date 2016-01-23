@@ -253,7 +253,7 @@ header {
  * ----------------------------------------------------------------------------
  */
 .bc-main {
-	margin-bottom: 2em;
+	margin-bottom: 2px;
 }
 .bc-main .container {
 	background-color: #ffffff;
@@ -294,6 +294,10 @@ footer .social a:hover {
 .bc-footer-details {
     margin-top: 1em;
 }
+.footer-logos {
+	padding-top: 1em;
+	background-color: #fff;
+}
 .footer-logos .widget {
     padding-bottom: 1em;
 }
@@ -330,9 +334,17 @@ footer .social a:hover {
 .bc-content {
 
 }
- .page-intro {
-
+ .page-intro .excerpt-content {
+	 width: 50%;
  }
+@media (max-width: 768px) {
+	.page-intro .excerpt-content {
+		width: 100%;
+	}
+}
+.home .page-intro .excerpt-content {
+	width: 100%;
+}
  .color-blu-bg {
  	color: #fff;
  	background-color: #0c57a8;

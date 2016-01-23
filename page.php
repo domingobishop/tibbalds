@@ -3,13 +3,14 @@
     <?php if (has_post_thumbnail() && !post_password_required()) : ?>
         <?php $bcimage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
     <?php endif; ?>
+    <?php $bgcolour = get_post_meta($post->ID, 'bg colour', true); ?>
 
     <div id="content" class="bc-content page">
     <div class="container">
         <div class="row">
             <div class="page-intro col-lg-12">
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <div class="title-header">
+                    <div class="title-header" style="background-color:<?php echo $bgcolour; ?>;">
                         <h1>
                             <?php the_title(); ?>
                         </h1>

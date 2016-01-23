@@ -1,6 +1,6 @@
 /*
 Theme Name:     Tibbalds v2
-Theme URI:      http://chrisbishop.me.uk/resources/
+Theme URI:      https://github.com/domingobishop/tibbalds
 Author:         Chris Bishop
 Description:    A 'blank canvas' with Bootstrap for developing WordPress themes. 
 Author URI:     http://chrisbishop.me.uk/
@@ -28,14 +28,14 @@ html, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
 }
 a {
-	color: #0c57a8;
+	color: #c70752;
 	text-decoration: underline;
 }
 p a {
 	font-weight: 600;
 }
 a:hover, a:focus {
-	color: #3399ff;
+	color: #e383a8;
 }
 table {
 	border-bottom: 1px solid #ededed;
@@ -129,7 +129,7 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
     color: #222;
 }
 .sub-nav-menu a:hover, .sub-nav-menu a:focus {
-    color: #3399ff;
+    color: #c70752;
 }
 .sub-nav-menu ul {
     margin: 0;
@@ -142,6 +142,9 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 }
 .sub-nav-menu a {
     text-decoration: none;
+}
+.sub-nav-menu li.active a {
+	font-weight: 700;
 }
 @media (min-width: 768px) {
 	.navbar-header, .navbar-default .navbar-collapse {
@@ -256,8 +259,14 @@ header {
 	background-color: #ffffff;
 	padding-bottom: 15px;
 }
-.home .carousel {
-	border-top: #a6b0ba solid 15px;
+.home .carousel .excerpt-content {
+	color: #ffffff;
+	background-color: #a6b0ba;
+	padding: 1em;
+}
+.home .carousel .excerpt-content p {
+	font-size: 1.6em;
+	margin: 0;
 }
 /**
  * Footer
@@ -273,6 +282,7 @@ footer ul {
 	padding: 0;
 }
 footer a {
+	color: #fff;
     text-decoration: none;
 }
 footer .social {
@@ -286,6 +296,12 @@ footer .social a:hover {
 }
 .footer-logos .widget {
     padding-bottom: 1em;
+}
+.footer-logos img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
 }
 
 /**

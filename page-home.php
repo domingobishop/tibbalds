@@ -11,7 +11,9 @@ get_header(); ?>
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
-
+                    <div class="excerpt-content">
+                        <?php if ($post->post_excerpt) the_excerpt(); ?>
+                    </div>
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>

@@ -6,15 +6,18 @@
 
     <div id="content" class="page-intro post">
     <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="title-header">
-                <h1>
-                    <?php the_title(); ?>
-                </h1>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-header">
+                    <h1>
+                        <?php the_title(); ?>
+                    </h1>
+                    <small><?php the_date('F j, Y'); ?></small>
+                </div>
             </div>
         </div>
     </div>
+    <div class="container">
     <div class="row">
     <div class="col-lg-6">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

@@ -16,7 +16,7 @@ get_header(); ?>
                             <h1><?php the_title(); ?></h1>
                             <?php while (have_posts()) : the_post(); ?>
                                 <div class="entry-content">
-                                    <?php the_content(); ?>
+                                    <?php the_excerpt(); ?>
                                 </div>
                             <?php endwhile; ?>
                         <?php } ?>
@@ -37,7 +37,7 @@ get_header(); ?>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="row bc-post-loop-wrap">
-                        <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future'); ?>
+                        <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future&orderby=rand'); ?>
                         <?php if (have_posts()) : ?>
                             <?php /* The loop */ ?>
                             <?php while (have_posts()) : the_post(); ?>

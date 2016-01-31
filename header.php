@@ -40,11 +40,11 @@
                         <div class="sub-nav-menu">
                         <h2>Tibbalds Planning and Urban Design</h2>
                         <ul>
-                            <li><a href="<?php bloginfo('siteurl'); ?>/best-practice">best practice</a></li>
-                            <li><a href="<?php bloginfo('siteurl'); ?>/about">about us</a></li>
-                            <li><a href="<?php bloginfo('siteurl'); ?>/people">people</a></li>
-                            <li><a href="<?php bloginfo('siteurl'); ?>/contact">contact us</a></li>
-                            <li><a href="<?php bloginfo('siteurl'); ?>/news">news</a></li>
+                            <li class="menu-item <?php if ( is_page( 'best-practice' ) ) { echo 'active'; } ?>"><a href="<?php bloginfo('siteurl'); ?>/best-practice">best practice</a></li>
+                            <li class="menu-item <?php if ( is_page( 'about' ) ) { echo 'active'; } ?>"><a href="<?php bloginfo('siteurl'); ?>/about">about us</a></li>
+                            <li class="menu-item <?php if ( is_page( 'people' ) ) { echo 'active'; } ?>"><a href="<?php bloginfo('siteurl'); ?>/people">people</a></li>
+                            <li class="menu-item <?php if ( is_page( 'contact' ) ) { echo 'active'; } ?>"><a href="<?php bloginfo('siteurl'); ?>/contact">contact us</a></li>
+                            <li class="menu-item <?php if ( is_page( 'news' ) ) { echo 'active'; } ?>"><a href="<?php bloginfo('siteurl'); ?>/news">news</a></li>
                         </ul>
                             </div>
                     </div>

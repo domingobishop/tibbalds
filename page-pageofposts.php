@@ -35,7 +35,7 @@ get_header(); ?>
                                 <h3 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark">
                                         <?php the_title(); ?>
                                     </a></h3>
-
+                                <small><?php the_date('F j, Y'); ?></small>
                                 <div class="entry-summary">
                                     <?php the_excerpt(); ?>
                                 </div>
@@ -45,7 +45,7 @@ get_header(); ?>
                                 <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
                                     <div class="entry-thumbnail">
                                         <a href="<?php the_permalink(); ?>">
-                                            <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
+                                            <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
                                         </a>
                                     </div>
                                 <?php endif; ?>

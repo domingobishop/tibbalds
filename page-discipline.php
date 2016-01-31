@@ -45,6 +45,9 @@ get_header(); ?>
   </div>
   <div class="container">
   <div class="row">
+      <div class="col-md-12">
+          <h2>Project examples</h2>
+      </div>
       <div class="projects">
           <?php
             for ($i = 1; $i <= 12; $i++) { ?>

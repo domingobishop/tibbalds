@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <?php if (is_active_sidebar('footer-logos')) { ?>
-                <div class="footer-logos">
+                <div class="footer-logos clearfix">
                     <?php dynamic_sidebar('footer-logos'); ?>
                 </div>
             <?php } ?>

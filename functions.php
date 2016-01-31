@@ -52,7 +52,7 @@ function theme_slug_widgets_init()
         'name' => __('Footer logos', 'theme-slug'),
         'id' => 'footer-logos',
         'description' => __('Widget area for logos.', 'theme-slug'),
-        'before_widget' => '<div id="%1$s" class="widget footer-col col-xs-6 col-sm-4 col-md-2 col-lg-2 %2$s">',
+        'before_widget' => '<div id="%1$s" class="widget footer-col col-xs-4 col-sm-2 %2$s">',
         'after_widget' => '</div>',
     ));
 }

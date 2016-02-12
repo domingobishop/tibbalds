@@ -29,6 +29,10 @@ html, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
 }
 
+h1, h2, h3, h4, h5, h6, h2 a, h3 a, h4 a {
+    color: #565656;
+}
+
 a {
     color: #c70752;
     text-decoration: underline;
@@ -400,6 +404,7 @@ footer .social a:hover {
  * ----------------------------------------------------------------------------
  */
 .title-header h1 {
+    color: #ffffff;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
@@ -507,6 +512,10 @@ footer .social a:hover {
 
 .projects {
     margin: 1em 0;
+}
+
+.projects a {
+    text-decoration: none;
 }
 
 /**

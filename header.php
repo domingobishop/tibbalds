@@ -37,8 +37,6 @@
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <a class="brand" href="<?php bloginfo('siteurl'); ?>/"
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                            <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
-                                 alt="<?php bloginfo('name'); ?>" class="img-responsive"> -->
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive" alt="Tibbalds">
                         </a>
                     </div>

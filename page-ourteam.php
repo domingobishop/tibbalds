@@ -53,6 +53,9 @@ get_header(); ?>
                                             <h5>
                                                 <?php the_title(); ?>
                                             </h5>
+                                            <p>
+                                                <?php the_excerpt(); ?>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

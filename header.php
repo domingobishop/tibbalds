@@ -11,6 +11,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>
         <?php wp_title('|', true, 'right'); ?>
     </title>
@@ -20,6 +21,11 @@
           type='text/css' media='all'/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
     <?php wp_head(); ?>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
@@ -31,8 +37,6 @@
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <a class="brand" href="<?php bloginfo('siteurl'); ?>/"
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                            <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
-                                 alt="<?php bloginfo('name'); ?>" class="img-responsive"> -->
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive" alt="Tibbalds">
                         </a>
                     </div>

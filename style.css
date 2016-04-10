@@ -123,13 +123,13 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover {
-    background-color: #3399ff;
+    background-color: #c70752;
     color: #fff;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
-    background-color: #3399ff;
+    background-color: #c70752;
 }
 
 .navbar-toggle {
@@ -300,10 +300,15 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
         padding: 0 0 0.5em 0.75em;
     }
 }
-
+@media (max-width: 767px) {
+    .navbar {
+        border-right: solid 15px #fff;
+        border-left: solid 15px #fff;
+    }
+}
 @media (max-width: 991px) {
     .navbar {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 }
 
@@ -388,6 +393,14 @@ footer .social a:hover {
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+footer ul.social, .hca {
+    text-align: right;
+}
+@media (max-width: 768px)  {
+    footer ul.social, .hca {
+        text-align: left;
+    }
 }
 
 /**
@@ -520,6 +533,10 @@ footer .social a:hover {
 
 .projects h4 {
     min-height: 50px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
 }
 
 /**

@@ -518,6 +518,10 @@ footer .social a:hover {
     text-decoration: none;
 }
 
+.projects h4 {
+    min-height: 50px;
+}
+
 /**
  * Sidebar & Widgets
  * ----------------------------------------------------------------------------
@@ -558,4 +562,15 @@ footer .social a:hover {
     font-size: 14px;
     font-style: italic;
     font-weight: 300;
+}
+
+.team-name-title h5 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.team-name-title p {
+    margin: 0;
+    font-size: 12px;
 }

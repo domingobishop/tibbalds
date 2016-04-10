@@ -10,69 +10,65 @@ get_header(); ?>
     <?php endif; ?>
     <?php $bgcolour = get_post_meta($post->ID, 'bg colour', true); ?>
 
-<div id="content" class="bc-content discipline">
-    <div class="container">
-        <div class="row">
-            <div class="page-intro col-lg-12">
-                <div class="title-header" style="background-color:<?php echo $bgcolour; ?>;">
-                    <h1>
-                        <?php the_title(); ?>
-                    </h1>
-                    <div class="excerpt-content">
-                        <?php if ($post->post_excerpt) the_excerpt(); ?>
+    <div id="content" class="bc-content discipline">
+        <div class="container">
+            <div class="row">
+                <div class="page-intro col-lg-12">
+                    <div class="title-header" style="background-color:<?php echo $bgcolour; ?>;">
+                        <h1>
+                            <?php the_title(); ?>
+                        </h1>
+                        <div class="excerpt-content">
+                            <?php if ($post->post_excerpt) the_excerpt(); ?>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-6">
-        <article <?php post_class(); ?>>
-          <div class="entry-content">
-            <?php the_content(); ?>
-          </div>
-          <!-- .entry-content --> 
-        </article>
-        <!-- #post -->
-      </div>
-      <div class="col-md-6 col-lg-6">
-      <?php if ($bcimage) {
-        echo '<img src="' . $bcimage[0] . '" class="img-responsive">';
-    } ?>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-  <div class="row">
-      <div class="col-md-12">
-          <h2>Project examples</h2>
-      </div>
-      <div class="projects">
-          <?php
-            for ($i = 1; $i <= 12; $i++) { ?>
-                <div class="col-md-4 col-lg-4 service-tile service-<?php echo $i; ?>">
-                    <?php
-                    $image[$i] = get_post_meta($post->ID, 'image' . $i, true);
-                    $title[$i] = get_post_meta($post->ID, 'title' . $i, true);
-                    $text[$i] = get_post_meta($post->ID, 'text' . $i, true);
-                    $url[$i] = get_post_meta($post->ID, 'url' . $i, true);
-                    ?>
-                    <a href="<?php echo $url[$i]; ?>">
-                        <img src="<?php echo $image[$i]; ?>" alt="<?php echo $title[$i]; ?>" class="img-responsive">
-                    <h4><?php echo $title[$i]; ?></h4>
-                    </a>
-                    <div><p><?php echo $text[$i]; ?></p></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <article <?php post_class(); ?>>
+                        <div class="entry-content">
+                            <?php the_content(); ?>
+                        </div>
+                        <!-- .entry-content -->
+                    </article>
+                    <!-- #post -->
                 </div>
-            <?php
-            }
-            ?>
-      </div>
-  </div>
-  </div>
-</div>
+                <div class="col-md-6 col-lg-6">
+                    <?php if ($bcimage) {
+                        echo '<img src="' . $bcimage[0] . '" class="img-responsive">';
+                    } ?>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Project examples</h2>
+                </div>
+                <div class="projects">
+                    <?php
+                    $projectCat = get_post_meta($post->ID, 'category', true);
+                    $args = array( 'posts_per_page' => 12,'category_name' => $projectCat );
+                    $projects = get_posts( $args );
+                    foreach ( $projects as $post ) : setup_postdata( $post ); ?>
+                        <div class="col-md-4 project-<?php echo $post->ID; ?>">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php echo get_the_post_thumbnail( $post->ID, 'large', array( 'class' => 'img-responsive' ) ); ?>
+                            </a>
+                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                        </div>
+                    <?php endforeach;
+                    wp_reset_postdata();
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <?php endwhile; ?>
-<!-- #content -->
+    <!-- #content -->
 
 <?php get_footer(); ?>

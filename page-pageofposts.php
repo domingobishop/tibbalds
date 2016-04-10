@@ -23,7 +23,7 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         <div class="container">
             <div class="bc-post-loop-wrap">
                 <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future'); ?>

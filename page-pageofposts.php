@@ -23,7 +23,7 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         <div class="container">
             <div class="bc-post-loop-wrap">
                 <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future'); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
                     <?php /* The loop */ ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <article id="post-<?php the_ID(); ?>" class="row">
-                            <div class="col-md-8 col-lg-8">
+                            <div class="col-sm-8 col-md-8 col-lg-8">
                                 <h3 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark">
                                         <?php the_title(); ?>
                                     </a></h3>
@@ -41,7 +41,7 @@ get_header(); ?>
                                 </div>
                                 <!-- .entry-summary -->
                             </div>
-                            <div class="col-md-4 col-lg-4">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
                                 <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
                                     <div class="entry-thumbnail">
                                         <a href="<?php the_permalink(); ?>">

@@ -122,7 +122,16 @@ if (!function_exists('yourtheme_admin_header_style')) :
                 display: none;
             }
         </style>
-    <?php
+        <?php
     }
 endif;
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="btn btn-default btn-sm"';
+}
+
 ?>
+

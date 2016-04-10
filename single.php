@@ -12,7 +12,9 @@
                     <h1>
                         <?php the_title(); ?>
                     </h1>
-                    <small><?php the_date('F j, Y'); ?></small>
+                    <?php if ( in_category( 'news' )) { ?>
+                        <small><?php the_date('F j, Y'); ?></small>
+                    <?php } ?>
                 </div>
             </div>
         </div>

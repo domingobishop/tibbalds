@@ -42,20 +42,18 @@
                     }(document, "script", "twitter-wjs");</script>
             </div>
             <div class="footer-col col-sm-12 col-md-4 col-lg-4">
-                <ul class="social">
+                <div class="social">
                     <a href="http://www.facebook.com/pages/Tibbalds-Planning-and-Urban-Design/182770125133124"
                        target="_blank">
-                        <i class="fa fa-facebook-square"></i>
+                        <em class="fa fa-facebook-square"></em>
                     </a>
                     <a href="https://twitter.com/#!/Tibbalds" target="_blank">
-                        <i class="fa fa-twitter-square"></i>
+                        <em class="fa fa-twitter-square"></em>
                     </a>
-                </ul>
+                </div>
                 <div class="hca">
                     <p>
-                        <small><a href="http://tibbaldscampbellreithjv.com/" target="_blank"/>Tibbalds CampbellReith<br>Multidisciplinary
-                            Joint Venture<br/><img src="<?php echo get_template_directory_uri(); ?>/img/hcajv-logo.jpg"
-                                                   style="margin-top:3px;"/></a></small>
+                        <small><a href="http://tibbaldscampbellreithjv.com/" target="_blank">Tibbalds CampbellReith<br>Multidisciplinary Joint Venture<br/><img src="<?php echo get_template_directory_uri(); ?>/img/hcajv-logo.jpg" alt="Tibbalds CampbellReith Multidisciplinary Joint Venture"></a></small>
                     </p>
                 </div>
             </div>

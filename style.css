@@ -394,11 +394,11 @@ footer .social a:hover {
     height: auto;
     margin: 0 auto;
 }
-footer ul.social, .hca {
+footer .social, .hca {
     text-align: right;
 }
 @media (max-width: 768px)  {
-    footer ul.social, .hca {
+    footer .social, .hca {
         text-align: left;
     }
 }

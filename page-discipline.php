@@ -27,7 +27,7 @@ get_header(); ?>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="col-md-6 col-lg-6">
                     <article <?php post_class(); ?>>
                         <div class="entry-content">
                             <?php the_content(); ?>
@@ -54,7 +54,7 @@ get_header(); ?>
                     $args = array( 'posts_per_page' => 12,'category_name' => $projectCat );
                     $projects = get_posts( $args );
                     foreach ( $projects as $post ) : setup_postdata( $post ); ?>
-                        <div class="col-md-4 project-<?php echo $post->ID; ?>">
+                        <div class="col-sm-6 col-md-4 project-<?php echo $post->ID; ?>">
                             <a href="<?php the_permalink(); ?>">
                                 <?php echo get_the_post_thumbnail( $post->ID, 'large', array( 'class' => 'img-responsive' ) ); ?>
                             </a>

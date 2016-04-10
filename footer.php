@@ -11,7 +11,7 @@
             <?php } ?>
         </div>
         <div class="row bc-footer-details clearfix">
-            <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+            <div class="footer-col col-sm-6 col-md-4 col-lg-4">
                 <p>
                     <small>
                         <b>Tibbalds Planning and Urban Design</b><br/>19 Maltings Place<br/>169 Tower Bridge Rd<br/>London
@@ -19,7 +19,7 @@
                     </small>
                 </p>
             </div>
-            <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+            <div class="footer-col col-sm-6 col-md-4 col-lg-4">
                 <p>
                     <small><b>Latest tweet</b></small>
                 </p>
@@ -41,21 +41,21 @@
                         }
                     }(document, "script", "twitter-wjs");</script>
             </div>
-            <div class="footer-col col-sm-12 col-md-4 col-lg-4 text-right">
-                <ul class="social">
+            <div class="footer-col col-sm-12 col-md-4 col-lg-4">
+                <div class="social">
                     <a href="http://www.facebook.com/pages/Tibbalds-Planning-and-Urban-Design/182770125133124"
                        target="_blank">
-                        <i class="fa fa-facebook-square"></i>
+                        <em class="fa fa-facebook-square"></em>
                     </a>
                     <a href="https://twitter.com/#!/Tibbalds" target="_blank">
-                        <i class="fa fa-twitter-square"></i>
+                        <em class="fa fa-twitter-square"></em>
                     </a>
-                </ul>
-                <p>
-                    <small><a href="http://tibbaldscampbellreithjv.com/" target="_blank"/>Tibbalds CampbellReith<br>Multidisciplinary
-                        Joint Venture<br/><img src="<?php echo get_template_directory_uri(); ?>/img/hcajv-logo.jpg"
-                                               style="margin-top:3px;"/></a></small>
-                </p>
+                </div>
+                <div class="hca">
+                    <p>
+                        <small><a href="http://tibbaldscampbellreithjv.com/" target="_blank">Tibbalds CampbellReith<br>Multidisciplinary Joint Venture<br/><img src="<?php echo get_template_directory_uri(); ?>/img/hcajv-logo.jpg" alt="Tibbalds CampbellReith Multidisciplinary Joint Venture"></a></small>
+                    </p>
+                </div>
             </div>
         </div>
     </div>

@@ -26,7 +26,16 @@ get_header(); ?>
         </div>
         <div class="container">
             <div class="bc-post-loop-wrap">
-                <?php query_posts('category_name=' . get_the_title() . '&post_status=publish,future'); ?>
+                <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                $args = array(
+                    'posts_per_page' => get_option('posts_per_page'),
+                    'paged' => $paged,
+                    'category_name'=>get_the_title(),
+                    'post_status'=> array('publish', 'future'),
+                    'orderby' => 'publish_date',
+                    'order' => 'DESC'
+                );
+                query_posts($args); ?>
                 <?php if (have_posts()) : ?>
                     <?php /* The loop */ ?>
                     <?php while (have_posts()) : the_post(); ?>

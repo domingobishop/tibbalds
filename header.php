@@ -49,6 +49,7 @@
                             <li class="menu-item <?php if ( is_page( 'people' ) ) { echo 'active'; } ?>"><a href="<?php bloginfo('siteurl'); ?>/people/">people</a></li>
                             <li class="menu-item <?php if ( is_page( 'contact' ) ) { echo 'active'; } ?>"><a href="<?php bloginfo('siteurl'); ?>/contact/">contact us</a></li>
                             <li class="menu-item <?php if ( is_page( 'news' ) ) { echo 'active'; } ?>"><a href="<?php bloginfo('siteurl'); ?>/news/">news</a></li>
+                            <li class="menu-item"><a href="https://tibbalds.blog/" target="_blank">blog</a></li>
                         </ul>
                             </div>
                     </div>
